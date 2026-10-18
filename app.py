@@ -27,7 +27,7 @@ features['Longitude'] = st.number_input('Longitude', min_value=-124.0, max_value
 
 
 # Load the trained model
-model = pickle.load(open('california_housing_model.pkl', 'rb'))
+model = pickle.load(open('california_housing_model_svm.pkl', 'rb'))
 
 # Make the prediction
 prediction = model.predict(pd.DataFrame(features, index=[0]))[0]
